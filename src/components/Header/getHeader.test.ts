@@ -1,3 +1,6 @@
+import { describe } from "vitest";
+import { expect } from "vitest";
+import { test } from "vitest";
 import getHeader from "./getHeader";
 
 describe("Given the Header component", () => {
