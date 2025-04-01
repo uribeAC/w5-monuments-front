@@ -1,3 +1,5 @@
+import "./Header.css";
+
 const getHeader = (): HTMLElement => {
   const header = document.createElement("header");
   header.classList.add("main-header");

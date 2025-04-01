@@ -1,0 +1,10 @@
+.main-container {
+  display: flex;
+  padding: 25px;
+  width: 100vw;
+  height: 100vh;
+
+  @media (width < 500px) {
+    justify-content: center;
+  }
+}
