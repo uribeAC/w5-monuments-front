@@ -1,0 +1,17 @@
+.main-header {
+  align-self: self-start;
+}
+
+.title {
+  text-transform: uppercase;
+  text-decoration: underline overline var(--principal-color);
+  text-underline-offset: 8px;
+  color: var(--principal-color);
+  font-size: 2rem;
+}
+
+.title:after,
+.title:before {
+  content: "...";
+  color: transparent;
+}
