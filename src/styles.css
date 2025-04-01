@@ -1,0 +1,19 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --principal-color: #9f550a;
+}
+
+body {
+  margin: 0;
+  font-family: "Lexend Variable", sans-serif;
+  background-color: #faebd7;
+}
+
+h1 {
+  margin: 0;
+}
