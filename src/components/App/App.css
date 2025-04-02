@@ -1,10 +1,9 @@
 .main-container {
+  max-width: 1900px;
+  margin: 0 auto;
   display: flex;
   padding: 25px;
   width: 100vw;
   height: 100vh;
-
-  @media (width < 500px) {
-    justify-content: center;
-  }
+  justify-content: center;
 }
