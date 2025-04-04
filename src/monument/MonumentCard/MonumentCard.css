@@ -1,0 +1,20 @@
+.monument {
+  background-color: var(--principal-color);
+  padding: 30px 15px;
+  border-radius: 10px;
+  color: #fff;
+  height: 100%;
+  box-shadow:
+    1px 1px 0px #bebebe,
+    2px 2px 0px #5e5e5e,
+    3px 3px 0px #000000;
+}
+
+.monument__name {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-shadow:
+    2px 2px 0px #bebebeaa,
+    4px 4px 0px #5e5e5e82,
+    6px 6px 0px #00000057;
+}

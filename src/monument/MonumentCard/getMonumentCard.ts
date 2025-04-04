@@ -1,4 +1,5 @@
 import { Monument } from "../types";
+import "./MonumentCard.css";
 
 const getMonumentCard = (monument: Monument): HTMLElement => {
   const monumentCardElement = document.createElement("article");
