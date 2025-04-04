@@ -44,6 +44,10 @@
     background-color: #9f550a47;
     border-radius: 4px;
   }
+
+  @media (width < 340px) {
+    font-size: 0.9rem;
+  }
 }
 
 .navigation__link--current {
