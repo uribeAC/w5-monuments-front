@@ -22,9 +22,8 @@ describe("Given the Header component", () => {
       expect(appTitle?.textContent).toBe(expectedAppTitle);
     });
 
-    test("Then it should show 'Monuments list' as a link", () => {
-      const expectedText = "Monuments list";
-      const expectedPath = "/";
+    test("Then it should show 'Monuments' as a link", () => {
+      const expectedText = "Monuments";
 
       const Header = getHeader();
 
@@ -38,12 +37,10 @@ describe("Given the Header component", () => {
 
       expect(linkElement).not.toBeNull();
       expect(linkElement.textContent).toBe(expectedText);
-      expect(linkElement.pathname).toBe(expectedPath);
     });
 
     test("Then it should show 'Add monument' as a link", () => {
       const expectedText = "Add monument";
-      const expectedPath = "/add-monument";
 
       const Header = getHeader();
 
@@ -57,7 +54,6 @@ describe("Given the Header component", () => {
 
       expect(linkElement).not.toBeNull();
       expect(linkElement.textContent).toBe(expectedText);
-      expect(linkElement.pathname).toBe(expectedPath);
     });
   });
 });

@@ -8,7 +8,7 @@ const getHeader = (): HTMLElement => {
   <h1 class="title">Monuments</h1>
   <nav>
     <ul class="navigation">
-      <li><a class="navigation__link" href="/">Monuments list</a></li>
+      <li><a class="navigation__link" href="/">Monuments</a></li>
       <li><a class="navigation__link" href="/add-monument">Add monument</a></li>
     </ul>
   </nav>
@@ -17,7 +17,7 @@ const getHeader = (): HTMLElement => {
   const navegationElements = header.querySelectorAll("a");
 
   navegationElements.forEach((navegationElement) => {
-    if (window.location.pathname === navegationElement.getAttribute("href")) {
+    if (window.location.href === navegationElement.href) {
       navegationElement.classList.add("navigation__link--current");
     }
   });
