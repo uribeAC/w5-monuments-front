@@ -1,7 +1,7 @@
 import { Monument } from "./types";
 
 const getMonuments = async (): Promise<Monument[]> => {
-  const monumentsUrl = "http://localhost:4000/monuments";
+  const monumentsUrl = "https://monuments-back-uribe.onrender.com/monuments";
 
   const response = await fetch(monumentsUrl);
 
