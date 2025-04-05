@@ -1,8 +1,6 @@
 import { Monument } from "./types";
 
-const getMonuments = async (): Promise<Monument[]> => {
-  const monumentsUrl = "http://localhost:4000/monuments";
-
+const getMonuments = async (monumentsUrl: string): Promise<Monument[]> => {
   const response = await fetch(monumentsUrl);
 
   const { monuments } = (await response.json()) as { monuments: Monument[] };
