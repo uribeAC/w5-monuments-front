@@ -1,20 +1,68 @@
 .monument {
   background-color: var(--principal-color);
-  padding: 30px 15px;
+  padding: 10px 10px;
   border-radius: 10px;
   color: #fff;
   height: 100%;
   box-shadow:
-    1px 1px 0px #bebebe,
-    2px 2px 0px #5e5e5e,
-    3px 3px 0px #000000;
+    1.5px 1.5px 0px #bebebe,
+    3px 3px 0px #5e5e5e,
+    4.5px 4.5px 0px #000000;
+}
+
+.monument__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4.5px 0px 0px 4.5px;
+  background-color: #c07121;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  box-shadow:
+    inset 1.5px 1.5px 0px #bebebe,
+    inset 3px 3px 0px #5e5e5e,
+    inset 4.5px 4.5px 0px #000000;
 }
 
 .monument__name {
+  padding: 4px;
   font-size: 1.2rem;
   letter-spacing: 2px;
   text-shadow:
     2px 2px 0px #bebebeaa,
     4px 4px 0px #5e5e5e82,
     6px 6px 0px #00000057;
+}
+
+.monument__image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.monument__data {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  gap: 8px;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.monument__description {
+  font-size: 1rem;
+  text-shadow:
+    1.5px 1.5px 0px #5e5e5e82,
+    3px 3px 0px #00000057;
+}
+
+.monument__location {
+  margin-top: auto;
+  font-size: 1.1rem;
+  align-self: flex-end;
+  text-shadow:
+    1.2px 1.2px 0px #bebebeaa,
+    2.4px 2.4px 0px #5e5e5e82,
+    3.6px 3.6px 0px #00000057;
 }
