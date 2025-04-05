@@ -1,4 +1,4 @@
 import getMonuments from "../getMonuments";
 
-const monumentsUrl = "http://localhost:4000/monuments";
+const monumentsUrl = "https://monuments-back-uribe.onrender.com/monuments";
 export const monuments = await getMonuments(monumentsUrl);
