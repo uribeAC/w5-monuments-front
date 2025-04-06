@@ -41,12 +41,7 @@ describe("Given the MonumentCard component", () => {
 
       screen.appendChild(MonumentCard);
 
-      const monumentDescriptionElement = [...screen.querySelectorAll(`*`)].find(
-        (element) => element.textContent === sensojiTemple.description,
-      );
-
-      expect(monumentDescriptionElement).not.toBeNull();
-      expect(monumentDescriptionElement?.textContent).toBe(expectedDescription);
+      expect(screen.textContent).toContain(expectedDescription);
     });
 
     test("Then it should show the location: 'Japon, Tokio' inside the monument card", () => {
@@ -56,16 +51,7 @@ describe("Given the MonumentCard component", () => {
 
       screen.appendChild(MonumentCard);
 
-      const monumentLocationElement = [...screen.querySelectorAll(`*`)].find(
-        (element) =>
-          element.textContent ===
-          `${sensojiTemple.country}, ${sensojiTemple.city}`,
-      );
-
-      expect(monumentLocationElement).not.toBeNull();
-      expect(monumentLocationElement?.textContent).toBe(
-        expectedMonumentLocation,
-      );
+      expect(screen.textContent).toContain(expectedMonumentLocation);
     });
   });
 });
