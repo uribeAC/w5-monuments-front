@@ -1,6 +1,6 @@
 import { MonumentCommonData } from "../../src/monument/types";
 
-export const sendData = async (): Promise<void> => {
+export const sendData = async (): Promise<boolean> => {
   const nameInput = document.querySelector("#name") as HTMLInputElement;
   const descriptionInput = document.querySelector(
     "#description",
@@ -28,13 +28,19 @@ export const sendData = async (): Promise<void> => {
     city: cityInput.value,
   };
 
+  let hasResponse = false;
+
   try {
     await fetch("https://monuments-back-uribe.onrender.com/monuments/add", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(monumentData),
     });
+
+    hasResponse = true;
   } catch (error) {
     throw new Error(`${error}`);
   }
+
+  return hasResponse;
 };
