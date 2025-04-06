@@ -1,0 +1,65 @@
+.monument-wrapper {
+  background-color: #824406;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow:
+    1.5px 1.5px 0px #bebebe,
+    3px 3px 0px #5e5e5e,
+    4.5px 4.5px 0px #000000;
+}
+
+.monument-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--principal-color);
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow:
+    inset 1.5px 1.5px 0px #bebebe,
+    inset 3px 3px 0px #5e5e5e,
+    inset 4.5px 4.5px 0px #000000;
+}
+
+.monument-form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.monument-form__text {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.monument-form__control {
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow:
+    inset 1.5px 1.5px 0px #bebebe,
+    inset 3px 3px 0px #5e5e5e,
+    inset 4.5px 4.5px 0px #000000;
+
+  &:focus {
+    background-color: #e6be97;
+  }
+}
+
+.monument-form__button {
+  padding: 10px;
+  align-self: flex-start;
+  border-radius: 5px;
+  box-shadow:
+    1.5px 1.5px 0px #bebebe,
+    3px 3px 0px #5e5e5e,
+    4.5px 4.5px 0px #000000;
+
+  &:focus {
+    background-color: #e6be97;
+  }
+
+  &:hover {
+    background-color: #562c03;
+    color: #fff;
+  }
+}

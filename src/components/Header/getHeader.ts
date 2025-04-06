@@ -9,7 +9,7 @@ const getHeader = (): HTMLElement => {
   <nav>
     <ul class="navigation">
       <li><a class="navigation__link" href="/">Monuments</a></li>
-      <li><a class="navigation__link" href="/add-monument">Add monument</a></li>
+      <li><a class="navigation__link" href="/add/">Add monument</a></li>
     </ul>
   </nav>
   `;
