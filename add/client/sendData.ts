@@ -28,15 +28,19 @@ export const sendData = async (): Promise<boolean> => {
     city: cityInput.value,
   };
 
+  let hasResponse = false;
+
   try {
     await fetch("https://monuments-back-uribe.onrender.com/monuments/add", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(monumentData),
     });
+
+    hasResponse = true;
   } catch (error) {
     throw new Error(`${error}`);
   }
 
-  return true;
+  return hasResponse;
 };
