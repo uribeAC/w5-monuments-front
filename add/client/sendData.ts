@@ -1,6 +1,6 @@
 import { MonumentCommonData } from "../../src/monument/types";
 
-export const sendData = async (): Promise<void> => {
+export const sendData = async (): Promise<boolean> => {
   const nameInput = document.querySelector("#name") as HTMLInputElement;
   const descriptionInput = document.querySelector(
     "#description",
@@ -37,4 +37,6 @@ export const sendData = async (): Promise<void> => {
   } catch (error) {
     throw new Error(`${error}`);
   }
+
+  return true;
 };

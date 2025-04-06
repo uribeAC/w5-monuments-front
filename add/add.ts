@@ -19,7 +19,11 @@ if (!form) {
   throw new Error("Missing form element");
 }
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
-  sendData();
+  const replacePage = await sendData();
+
+  if (replacePage) {
+    window.location.replace("/");
+  }
 });
